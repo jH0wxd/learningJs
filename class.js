@@ -10,11 +10,14 @@ class Piloto {
         this.tempoDeVoo = tempoDeVoo;
         this.temPermissaoParaVoar = temPermissaoParaVoar;
     }
+    pilotar() {
+        return `O piloto ${this.nome} vai pilotar agora`
+    }
 }
-const piloto = new Piloto (
+const piloto = new Piloto(
     "geraldino",
-    new Date(1991,3, 4),
+    new Date(1991, 3, 4),
     '8 anos',
     true
 )
-console.log (piloto.dataDeNascimento)
+console.log(piloto.pilotar())
