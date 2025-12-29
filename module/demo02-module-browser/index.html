@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script src="./matematica.js"></script>
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <form>
+        <label for="tipoOperacao">Tipo Operação</label>
+        <select name="tipoDeOperacao" id="tipoDeOperacao">
+            <option value="dividir">Dividir</option>
+            <option value="subtrair">Subtrair</option>
+        </select>
+        <br />
+        <label for="valor1">Valor1</label>
+        <!--label muda o foco da tela -->
+        <input type="number" id="valor1">
+        <br />
+        <label for="valor2">Valor2</label>
+        <!--label muda o foco da tela -->
+        <input type="number" id="valor2">
+        <br />
+        <input type="button" value="Calcular" id="btnCalcular">
+        <!--input captura o valor da nossa tela para fazer o calculo-->
+        <input type="reset" value="Limpar" id="btnLimpar">
+        <!--se tiver campo preenchido ele irá limpar nos demais campos-->
+        <br>
+        <output id="resultado">Aqui vai o resultado!!</output>
+    </form>
+</body>
+
+</html>
